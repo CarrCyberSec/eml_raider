@@ -1,4 +1,5 @@
 # eml_raider
+Copyright 2019, Brian T. Carr, All rights reserved.
 Author: Brian T. Carr
 Author's website: briantcarr.com
 Author's email: brian.carr@cisecurity.org   
