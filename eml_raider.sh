@@ -16,13 +16,14 @@ pattern_email='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}'
 if [ -f $fname ]
 then
 #Grep statements
-	ipv4_results=$(grep -Eio "$pattern_ipv4" "$fname" | sort | uniq -c )
-	email_results=$(grep -Eio "$pattern_email" "$fname" | sort | uniq -c )
-      	message_id=$(grep -i "Message-ID" "$fname")
-	x_originating=$(grep -i "originating" "$fname")
-	client_info=$(grep -i "client" "$fname")
-	spf_info=$(grep -i "spf" "$fname")
+        ipv4_results=$(grep -Eio --color=always "$pattern_ipv4" "$fname" | sort | uniq -c )
+        email_results=$(grep -Eio --color=always "$pattern_email" "$fname" | sort | uniq -c )
+        message_id=$(grep -i --color=always "Message-ID" "$fname")
+        x_originating=$(grep -i --color=always "originating" "$fname")
+        client_info=$(grep -i --color=always "client" "$fname")
+        spf_info=$(grep -i --color=always -A 2 "spf" "$fname")
 #output 
+
 	echo _____________________________________
 	echo The IPv4 Addresses located were: 
 	echo "$ipv4_results"
