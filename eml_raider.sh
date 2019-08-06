@@ -2,7 +2,7 @@
 #Bash Script that pulls out commonly analyzed email header artifacts
 #Author: Brian T. Carr
 #Copyright 2019, Brian T. Carr, All rights reserved. 
-#Author's Personal Wesbite: briantcarr.com
+#Author's Personal Website: briantcarr.com
 #Computer Emergency Response Team Intern at the Center for Internet Security
 #Any inquiries can be directed to: brian.carr@cisecurity.org
 #If you improve upon this script, I encourage you to share your results. 
